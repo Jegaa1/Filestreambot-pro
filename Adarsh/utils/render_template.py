@@ -39,12 +39,13 @@ async def render_page(id, secure_hash):
     <center><h5>Click on 👇 button to watch/download in your favorite player</h5></center>
     <center>
         <button style="font-size: 20px; background-color: skyblue; border-radius: 10px;" onclick="window.location.href = 'intent:{current_url}#Intent;package=com.mxtech.videoplayer.ad;S.title={file_data.file_name};end'">MX player</button> &nbsp
-        <button style="font-size: 20px; background-color: orange; border-radius: 10px;" onclick="window.location.href = 'vlc://{current_url}'">VLC player</button> &nbsp <br>
+        <button style="font-size: 20px; background-color: orange; border-radius: 10px;" onclick="window.location.href = 'vlcs://{current_url}'">VLC player</button> &nbsp <br>
         <p>&nbsp</p>
         <button style="font-size: 20px; background-color: red; border-radius: 10px;" onclick="window.location.href = 'playit://playerv2/video?url={current_url}&amp;title={file_data.file_name}'">Playit player</button> &nbsp <br>
         <p>&nbsp</p>
         <button style="font-size: 20px; background-color: yellow; border-radius: 10px;" onclick="window.location.href = '{current_url}'">Save in your gallery</button> &nbsp
     
+    </center>
         <footer>
 	    <align="left"><a href="https://telegram.dog/movieveedu" style="color:darkcyan" >PLEASE JOIN &emsp; &emsp;</a></align>
         <span id="fork-text">Movies Search Group</span>
@@ -55,7 +56,6 @@ async def render_page(id, secure_hash):
         </span>
 	    
     </footer>
-    </center>
 </p>
 </p>
 '''
