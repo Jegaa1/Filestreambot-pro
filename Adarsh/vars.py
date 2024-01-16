@@ -7,25 +7,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-class Var(object):
-    MULTI_CLIENT = False
-    API_ID = int(getenv('API_ID', "1923471"))
-    API_HASH = str(getenv('API_HASH', "fcdc178451cd234e63faefd38895c991"))
-    BOT_TOKEN = str(getenv('BOT_TOKEN', "6186847659:AAEObGgitW9RnCTpEUy1-tiBP0RLKnEivxk"))
-    name = str(getenv('name', 'filetolinkbot'))
-    SLEEP_THRESHOLD = int(getenv('SLEEP_THRESHOLD', '60'))
-    WORKERS = int(getenv('WORKERS', '4'))
-    BIN_CHANNEL = int(getenv('BIN_CHANNEL', "-1002110208013"))
-    PORT = int(getenv('PORT', 8080))
-    BIND_ADRESS = str(getenv('WEB_SERVER_BIND_ADDRESS', '0.0.0.0'))
-    PING_INTERVAL = int(environ.get("PING_INTERVAL", "1200"))  # 20 minutes
-    OWNER_ID = set(int(x) for x in os.environ.get("OWNER_ID", "880087645").split())  
-    NO_PORT = bool(getenv('NO_PORT', False))
-    APP_NAME = None
-    OWNER_USERNAME = str(getenv('OWNER_USERNAME', "JAsuran2p0"))
-    if 'DYNO' in environ:
-        ON_HEROKU = True
-        APP_NAME = str(getenv('APP_NAME'))
+j
     
     else:
         ON_HEROKU = False
