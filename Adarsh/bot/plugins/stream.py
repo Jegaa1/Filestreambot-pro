@@ -110,7 +110,7 @@ async def private_receive_handler(c: Client, m: Message):
 
         await m.reply_text(
 
-            text=msg_text.format(get_name(log_msg), humanbytes(get_media_file_size(m)), online_link, stream_link),
+            text=msg_text.format(get_name(log_msg), humanbytes(get_media_file_size(m)), stream_link, online_link),
 
             quote=True,
 
